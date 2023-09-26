@@ -1,0 +1,1114 @@
+{
+    "name": "string",
+    "comment": "This is a test stream",
+    "title": "Hockey channel",
+    "position": 2,
+    "named_by": "config",
+    "srt_port_resolve": false,
+    "template": "sports-hd",
+    "static": true,
+    "disabled": false,
+    "inputs": [
+        {
+            "url": "https://test.com",
+            "source_timeout": 20,
+            "timeout": 10,
+            "frames_timeout": 3,
+            "priority": 1,
+            "user_agent": "string",
+            "cluster_key": "string",
+            "via": "string",
+            "max_bitrate": 0,
+            "remote_dvr": "nochain",
+            "output_audio": "keep",
+            "headers": {
+                "User-Agent": "curl/7.85.0",
+                "Authorization": "Basic dXNlcjpwYXNzd29yZA=="
+            },
+            "no_clients_reconnect_delay": 0,
+            "allow_if": "string",
+            "deny_if": "string",
+            "aac": "string",
+            "width": 0,
+            "height": 0,
+            "bitrate": 0,
+            "id": "string",
+            "video_bitrate": 0,
+            "audio_bitrate": 0,
+            "connections": 0,
+            "skip_stalled_check": true,
+            "pageUrl": "http://somehost/sample.html",
+            "swfUrl": "file://C:/FlvPlayer.swf",
+            "tcUrl": "rtmp://localhost:1935/testapp/instance1",
+            "rtp": "udp",
+            "wait_rtcp": true,
+            "mode": "4d30",
+            "ainput": "microphone",
+            "vinput": "hdmi",
+            "vpts": "audio",
+            "apts": "video",
+            "pixel": "rgb8",
+            "channel": 2,
+            "sar": "16:9",
+            "audio_device": "plughw:1,0",
+            "video_device": "/dev/video0",
+            "vbi_device": "/dev/vbi",
+            "ttxt_descriptors": [
+                {
+                    "page": 100,
+                    "lang": "ita",
+                    "type": "initial"
+                }
+            ],
+            "vbi_threshold": 0,
+            "vbi_debug": true,
+            "minversion": "1.1.0",
+            "version": "1.3.0",
+            "enforcedencryption": true,
+            "passphrase": "9876543210",
+            "connect_timeout": 100,
+            "linger": 60,
+            "latency": 100,
+            "streamid": "#!::r=my-stream,m=publish",
+            "programs": [
+                1
+            ],
+            "pids": [
+                211
+            ],
+            "subtitles": "drop",
+            "closed_captions": {
+                "property1": "string",
+                "property2": "string"
+            },
+            "scte35": true,
+            "languages": {
+                "property1": "string",
+                "property2": "string"
+            },
+            "prefer_codec": "av1",
+            "transport": "udp",
+            "min_bitrate": 150,
+            "webrtc_abr": true,
+            "abr_stepup": 0,
+            "abr_correction": 200,
+            "abr_loss_lower": 2,
+            "abr_loss_upper": 10,
+            "abr_stepdown": 0,
+            "abr_mode": 1,
+            "abr_debug": 1,
+            "abr_cycles": 3,
+            "sync": "dts",
+            "audio_add": 0,
+            "mixer_strategy": "first_video_audio"
+        }
+    ],
+    "provider": "SportsTV",
+    "clients_timeout": 485,
+    "retry_limit": 0,
+    "groups": [
+        "sporthd"
+    ],
+    "source_timeout": 10,
+    "backup": {
+        "file": "vod/blank.mp4",
+        "timeout": 10,
+        "audio_timeout": 5,
+        "video_timeout": 4,
+        "transcode": true,
+        "dvr": true
+    },
+    "epg_enabled": true,
+    "transcoder": {
+        "global": {
+            "hw": "cpu",
+            "deviceid": "auto",
+            "external": true,
+            "gop": 150,
+            "burn": {
+                "text": {
+                    "text": "string",
+                    "x": 0,
+                    "y": 0,
+                    "position": "tl",
+                    "font": {
+                        "file": "/usr/share/fonts/truetype/freefont/FONT_NAME.ttf",
+                        "size": 24,
+                        "color": "string",
+                        "alpha": 1
+                    },
+                    "box": {
+                        "borderw": 10,
+                        "color": "string",
+                        "alpha": 0
+                    }
+                },
+                "time": {
+                    "text": "string",
+                    "x": 0,
+                    "y": 0,
+                    "position": "tl",
+                    "font": {
+                        "file": "/usr/share/fonts/truetype/freefont/FONT_NAME.ttf",
+                        "size": 24,
+                        "color": "string",
+                        "alpha": 1
+                    },
+                    "box": {
+                        "borderw": 10,
+                        "color": "string",
+                        "alpha": 0
+                    }
+                },
+                "sub": {
+                    "text": "string",
+                    "x": 0,
+                    "y": 0,
+                    "position": "tl",
+                    "font": {
+                        "file": "/usr/share/fonts/truetype/freefont/FONT_NAME.ttf",
+                        "size": 24,
+                        "color": "string",
+                        "alpha": 1
+                    },
+                    "box": {
+                        "borderw": 10,
+                        "color": "string",
+                        "alpha": 0
+                    }
+                }
+            }
+        },
+        "decoder": {
+            "pix_fmt": "yuv420p",
+            "deinterlace": true,
+            "deinterlace_rate": "frame",
+            "enable_audio_desync_comp": true,
+            "dsurfaces": 18,
+            "gen_pts": true,
+            "crop": {
+                "left": 0,
+                "top": 0,
+                "width": 0,
+                "height": 0
+            },
+            "drop_frame_interval": 3,
+            "no_dpb": false,
+            "streaming_frame": false
+        },
+        "audio": {
+            "bitrate": 96,
+            "sample_rate": 8000,
+            "codec": "opus",
+            "channels": 2,
+            "avol": "-6dB",
+            "split_channels": false
+        },
+        "video": [],
+        "tracks": []
+    },
+    "thumbnails": {
+        "url": "http://10.115.23.45/isapi/thumbnail.jpg",
+        "enabled": true,
+        "sizes": []
+    },
+    "dvr": {
+        "reference": "localdvr0",
+        "root": "string",
+        "storage_limit": 400000000000,
+        "disk_usage_limit": 98,
+        "expiration": 0,
+        "episodes_expiration": 0,
+        "episodes_url": "string",
+        "dvr_replicate": true,
+        "replication_port": 8002,
+        "schedule": [
+            [
+                800,
+                1600
+            ],
+            [
+                2200,
+                130
+            ]
+        ],
+        "dvr_offline": true,
+        "copy": "s3://token@minio.mycompany.com/dvr-bucket",
+        "keep_locks": false
+    },
+    "on_play": {
+        "url": "http://middleware-address/auth/v2",
+        "domains": [
+            "mycompany.com"
+        ],
+        "max_sessions": 5000,
+        "allowed_countries": [
+            "US",
+            "DE",
+            "GB"
+        ],
+        "disallowed_countries": [
+            "US",
+            "DE",
+            "GB"
+        ],
+        "soft_limitation": false,
+        "session_keys": [
+            "name",
+            "token",
+            "proto",
+            "ip"
+        ],
+        "extra": {
+            "property1": "string",
+            "property2": "string"
+        }
+    },
+    "on_publish": {
+        "url": "http://middleware-address/auth/v2",
+        "domains": [
+            "mycompany.com"
+        ],
+        "max_sessions": 5000,
+        "allowed_countries": [
+            "US",
+            "DE",
+            "GB"
+        ],
+        "disallowed_countries": [
+            "US",
+            "DE",
+            "GB"
+        ],
+        "soft_limitation": false,
+        "session_keys": [
+            "name",
+            "token",
+            "proto",
+            "ip"
+        ],
+        "extra": {
+            "property1": "string",
+            "property2": "string"
+        }
+    },
+    "password": "string",
+    "drm": {
+        "vendor": "aes128",
+        "keyserver": "https://keyserver1.mycompany.com",
+        "user_keyserver": "https://public-keyserver.mycompany.com",
+        "resource_id": "L2sItm6",
+        "expires": 0,
+        "encryption": "string",
+        "aes_key": "string",
+        "content_id": "string",
+        "signer": "string",
+        "iv": "string",
+        "secret": "string",
+        "site": "string",
+        "fp": "string",
+        "account_id": "string",
+        "ic_host": "string",
+        "password": "string",
+        "user_name": "string",
+        "user": "string",
+        "keyseed": "string",
+        "key_id": "6f651ae1-dbe4-4434-bcb4-690d1564c41c",
+        "userkey": "string",
+        "enc_token": "string",
+        "user_path": "12345/nks/conax",
+        "dump_url": true,
+        "hls_ext_x_key_iv": true,
+        "systems": [
+            "widevine"
+        ],
+        "la_url": "string"
+    },
+    "protocols": {
+        "whitelist": false,
+        "hls": true,
+        "dash": true,
+        "player": true,
+        "mss": true,
+        "rtmp": true,
+        "rtsp": true,
+        "m4f": true,
+        "m4s": true,
+        "mseld": true,
+        "tshttp": true,
+        "webrtc": true,
+        "srt": true,
+        "shoutcast": true,
+        "mp4": true,
+        "jpeg": true,
+        "api": true
+    },
+    "prepush": false,
+    "segment_count": 4,
+    "segment_duration": 5000,
+    "chunk_duration": 200,
+    "url_prefix": false,
+    "hls_scte35": "scte35",
+    "add_audio_only": true,
+    "webrtc_abr": {
+        "start_track": "v2"
+    },
+    "pushes": [
+        {
+            "url": "string",
+            "stats": {
+                "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                "opened_at": 0,
+                "bytes": 0,
+                "status": "starting",
+                "since": 0,
+                "retries": 0,
+                "last_error": "string",
+                "sent_bytes": 0,
+                "payload": 0,
+                "encoded": 0,
+                "fillers": 0,
+                "stuffing": 0,
+                "trimmed_bytes": 0,
+                "trimmed_frames": 0,
+                "sys_fillers": 0,
+                "sys_payload": 0,
+                "sys_stuffing": 0
+            },
+            "multicast_loop": true,
+            "vb": 2720,
+            "bitrate": 3200,
+            "pnr": 0,
+            "pmt": 8191,
+            "pids": {
+                "pmt": 8191,
+                "pcr": 8191,
+                "sdt": 8191,
+                "media": [
+                    {
+                        "pid": 8191,
+                        "content": "audio",
+                        "track": 1,
+                        "bitrate": 2543
+                    }
+                ],
+                "default": "auto"
+            },
+            "mpegts_ac3": "keep",
+            "dns": "string",
+            "retry_limit": 0,
+            "retry_timeout": 7,
+            "timeout": 10,
+            "volume": 0.5,
+            "deinterlace": true,
+            "fps": "string",
+            "size": "720x576",
+            "format": "ntsc",
+            "video_format": "pal",
+            "vbi_lines": [
+                {
+                    "service": "ttxt",
+                    "lines": [
+                        6
+                    ]
+                }
+            ],
+            "dthreads": 0,
+            "scale": "fast_bilinear",
+            "disabled": true,
+            "minversion": "1.0.0",
+            "version": "1.3.0",
+            "enforcedencryption": true,
+            "passphrase": "mytopsecret",
+            "connect_timeout": 2,
+            "linger": 60,
+            "latency": 2,
+            "streamid": "#!::r=my-stream,m=publish",
+            "standby": true
+        }
+    ],
+    "mpegts_pids": {
+        "pmt": 8191,
+        "pcr": 8191,
+        "sdt": 8191,
+        "media": [
+            {
+                "pid": 8191,
+                "content": "audio",
+                "track": 1,
+                "bitrate": 2543
+            }
+        ],
+        "default": "auto"
+    },
+    "mpegts_ac3": "keep",
+    "labels": {
+        "key1": "value1",
+        "key2": "value2"
+    },
+    "playback_headers": [
+        {
+            "playback": "live",
+            "protocols": {
+                "whitelist": false,
+                "hls": true,
+                "dash": true,
+                "player": true,
+                "mss": true,
+                "rtmp": true,
+                "rtsp": true,
+                "m4f": true,
+                "m4s": true,
+                "mseld": true,
+                "tshttp": true,
+                "webrtc": true,
+                "srt": true,
+                "shoutcast": true,
+                "mp4": true,
+                "jpeg": true,
+                "api": true
+            },
+            "headers": {
+                "Cache-Control": "max-age=3600"
+            },
+            "segment_headers": {
+                "Cache-Control": "max-age=3600"
+            }
+        }
+    ],
+    "cluster_ingest": {
+        "capture_at": "string"
+    },
+    "cache": {
+        "path": "/storage/cache",
+        "reference": "cache1",
+        "misses": 3,
+        "storage_limit": 400000,
+        "expiration": 3600,
+        "disk_limit": 0,
+        "time_limit": 0
+    },
+    "meta": {
+        "property1": "string",
+        "property2": "string"
+    },
+    "vision": {
+        "gpu": 1,
+        "alg": "faces",
+        "areas": "string"
+    },
+    "srt": 9060,
+    "srt2": 9062,
+    "srt_play": {
+        "port": 9050,
+        "minversion": "1.1.0",
+        "version": "1.3.0",
+        "enforcedencryption": true,
+        "passphrase": "mytopsecret",
+        "timeout": 10,
+        "linger": 15,
+        "latency": 150
+    },
+    "srt2_play": {
+        "port": 9050,
+        "minversion": "1.1.0",
+        "version": "1.3.0",
+        "enforcedencryption": true,
+        "passphrase": "mytopsecret",
+        "timeout": 10,
+        "linger": 15,
+        "latency": 150
+    },
+    "srt_publish": {
+        "port": 9050,
+        "minversion": "1.1.0",
+        "version": "1.3.0",
+        "enforcedencryption": true,
+        "passphrase": "mytopsecret",
+        "timeout": 10,
+        "linger": 15,
+        "latency": 150
+    },
+    "srt2_publish": {
+        "port": 9050,
+        "minversion": "1.1.0",
+        "version": "1.3.0",
+        "enforcedencryption": true,
+        "passphrase": "mytopsecret",
+        "timeout": 10,
+        "linger": 15,
+        "latency": 150
+    },
+    "aac_ab": 0,
+    "output_audio": "keep",
+    "prefer_codec": "h264",
+    "transport": "udp",
+    "max_bitrate": 0,
+    "min_bitrate": 0,
+    "frames_timeout": 0,
+    "abr_stepup": 0,
+    "abr_correction": 0,
+    "abr_loss_lower": 0,
+    "abr_loss_upper": 0,
+    "abr_stepdown": 0,
+    "abr_mode": 0,
+    "abr_debug": 0,
+    "abr_cycles": 0,
+    "config_on_disk": {
+        "name": "string",
+        "comment": "This is a test stream",
+        "title": "Hockey channel",
+        "position": 2,
+        "named_by": "config",
+        "srt_port_resolve": false,
+        "template": "sports-hd",
+        "static": true,
+        "disabled": false,
+        "inputs": [
+            {
+                "url": "string",
+                "source_timeout": 20,
+                "timeout": 10,
+                "frames_timeout": 3,
+                "priority": 1,
+                "user_agent": "string",
+                "cluster_key": "string",
+                "via": "string",
+                "max_bitrate": 0,
+                "remote_dvr": "nochain",
+                "output_audio": "keep",
+                "headers": {
+                    "User-Agent": "curl/7.85.0",
+                    "Authorization": "Basic dXNlcjpwYXNzd29yZA=="
+                },
+                "no_clients_reconnect_delay": 0,
+                "allow_if": "string",
+                "deny_if": "string",
+                "aac": "string",
+                "width": 0,
+                "height": 0,
+                "bitrate": 0,
+                "id": "string",
+                "video_bitrate": 0,
+                "audio_bitrate": 0,
+                "connections": 0,
+                "skip_stalled_check": true,
+                "pageUrl": "http://somehost/sample.html",
+                "swfUrl": "file://C:/FlvPlayer.swf",
+                "tcUrl": "rtmp://localhost:1935/testapp/instance1",
+                "rtp": "udp",
+                "wait_rtcp": true,
+                "mode": "4d30",
+                "ainput": "microphone",
+                "vinput": "hdmi",
+                "vpts": "audio",
+                "apts": "video",
+                "pixel": "rgb8",
+                "channel": 2,
+                "sar": "16:9",
+                "audio_device": "plughw:1,0",
+                "video_device": "/dev/video0",
+                "vbi_device": "/dev/vbi",
+                "ttxt_descriptors": [
+                    {
+                        "page": 100,
+                        "lang": "ita",
+                        "type": "initial"
+                    }
+                ],
+                "vbi_threshold": 0,
+                "vbi_debug": true,
+                "minversion": "1.1.0",
+                "version": "1.3.0",
+                "enforcedencryption": true,
+                "passphrase": "9876543210",
+                "connect_timeout": 100,
+                "linger": 60,
+                "latency": 100,
+                "streamid": "#!::r=my-stream,m=publish",
+                "programs": [
+                    1
+                ],
+                "pids": [
+                    211
+                ],
+                "subtitles": "drop",
+                "closed_captions": {
+                    "property1": "string",
+                    "property2": "string"
+                },
+                "scte35": true,
+                "languages": {
+                    "property1": "string",
+                    "property2": "string"
+                },
+                "prefer_codec": "av1",
+                "transport": "udp",
+                "min_bitrate": 150,
+                "webrtc_abr": true,
+                "abr_stepup": 0,
+                "abr_correction": 200,
+                "abr_loss_lower": 2,
+                "abr_loss_upper": 10,
+                "abr_stepdown": 0,
+                "abr_mode": 1,
+                "abr_debug": 1,
+                "abr_cycles": 3,
+                "sync": "dts",
+                "audio_add": 0,
+                "mixer_strategy": "first_video_audio"
+            }
+        ],
+        "provider": "SportsTV",
+        "clients_timeout": 485,
+        "retry_limit": 0,
+        "groups": [
+            "sporthd"
+        ],
+        "source_timeout": 10,
+        "backup": {
+            "file": "vod/blank.mp4",
+            "timeout": 10,
+            "audio_timeout": 5,
+            "video_timeout": 4,
+            "transcode": true,
+            "dvr": true
+        },
+        "epg_enabled": true,
+        "transcoder": {
+            "global": {
+                "hw": "cpu",
+                "deviceid": "auto",
+                "external": true,
+                "gop": 150,
+                "burn": {
+                    "text": {
+                        "text": "string",
+                        "x": 0,
+                        "y": 0,
+                        "position": "tl",
+                        "font": {
+                            "file": "/usr/share/fonts/truetype/freefont/FONT_NAME.ttf",
+                            "size": 24,
+                            "color": "string",
+                            "alpha": 1
+                        },
+                        "box": {
+                            "borderw": 10,
+                            "color": "string",
+                            "alpha": 0
+                        }
+                    },
+                    "time": {
+                        "text": "string",
+                        "x": 0,
+                        "y": 0,
+                        "position": "tl",
+                        "font": {
+                            "file": "/usr/share/fonts/truetype/freefont/FONT_NAME.ttf",
+                            "size": 24,
+                            "color": "string",
+                            "alpha": 1
+                        },
+                        "box": {
+                            "borderw": 10,
+                            "color": "string",
+                            "alpha": 0
+                        }
+                    },
+                    "sub": {
+                        "text": "string",
+                        "x": 0,
+                        "y": 0,
+                        "position": "tl",
+                        "font": {
+                            "file": "/usr/share/fonts/truetype/freefont/FONT_NAME.ttf",
+                            "size": 24,
+                            "color": "string",
+                            "alpha": 1
+                        },
+                        "box": {
+                            "borderw": 10,
+                            "color": "string",
+                            "alpha": 0
+                        }
+                    }
+                }
+            },
+            "decoder": {
+                "pix_fmt": "yuv420p",
+                "deinterlace": true,
+                "deinterlace_rate": "frame",
+                "enable_audio_desync_comp": true,
+                "dsurfaces": 18,
+                "gen_pts": true,
+                "crop": {
+                    "left": 0,
+                    "top": 0,
+                    "width": 0,
+                    "height": 0
+                },
+                "drop_frame_interval": 3,
+                "no_dpb": false,
+                "streaming_frame": false
+            },
+            "audio": {
+                "bitrate": 96,
+                "sample_rate": 8000,
+                "codec": "opus",
+                "channels": 2,
+                "avol": "-6dB",
+                "split_channels": false
+            },
+            "video": [],
+            "tracks": []
+        },
+        "thumbnails": {
+            "url": "http://10.115.23.45/isapi/thumbnail.jpg",
+            "enabled": true,
+            "sizes": []
+        },
+        "dvr": {
+            "reference": "localdvr0",
+            "root": "string",
+            "storage_limit": 400000000000,
+            "disk_usage_limit": 98,
+            "expiration": 0,
+            "episodes_expiration": 0,
+            "episodes_url": "string",
+            "dvr_replicate": true,
+            "replication_port": 8002,
+            "schedule": [
+                [
+                    800,
+                    1600
+                ],
+                [
+                    2200,
+                    130
+                ]
+            ],
+            "dvr_offline": true,
+            "copy": "s3://token@minio.mycompany.com/dvr-bucket",
+            "keep_locks": false
+        },
+        "on_play": {
+            "url": "http://middleware-address/auth/v2",
+            "domains": [
+                "mycompany.com"
+            ],
+            "max_sessions": 5000,
+            "allowed_countries": [
+                "US",
+                "DE",
+                "GB"
+            ],
+            "disallowed_countries": [
+                "US",
+                "DE",
+                "GB"
+            ],
+            "soft_limitation": false,
+            "session_keys": [
+                "name",
+                "token",
+                "proto",
+                "ip"
+            ],
+            "extra": {
+                "property1": "string",
+                "property2": "string"
+            }
+        },
+        "on_publish": {
+            "url": "http://middleware-address/auth/v2",
+            "domains": [
+                "mycompany.com"
+            ],
+            "max_sessions": 5000,
+            "allowed_countries": [
+                "US",
+                "DE",
+                "GB"
+            ],
+            "disallowed_countries": [
+                "US",
+                "DE",
+                "GB"
+            ],
+            "soft_limitation": false,
+            "session_keys": [
+                "name",
+                "token",
+                "proto",
+                "ip"
+            ],
+            "extra": {
+                "property1": "string",
+                "property2": "string"
+            }
+        },
+        "password": "string",
+        "drm": {
+            "vendor": "aes128",
+            "keyserver": "https://keyserver1.mycompany.com",
+            "user_keyserver": "https://public-keyserver.mycompany.com",
+            "resource_id": "L2sItm6",
+            "expires": 0,
+            "encryption": "string",
+            "aes_key": "string",
+            "content_id": "string",
+            "signer": "string",
+            "iv": "string",
+            "secret": "string",
+            "site": "string",
+            "fp": "string",
+            "account_id": "string",
+            "ic_host": "string",
+            "password": "string",
+            "user_name": "string",
+            "user": "string",
+            "keyseed": "string",
+            "key_id": "6f651ae1-dbe4-4434-bcb4-690d1564c41c",
+            "userkey": "string",
+            "enc_token": "string",
+            "user_path": "12345/nks/conax",
+            "dump_url": true,
+            "hls_ext_x_key_iv": true,
+            "systems": [
+                "widevine"
+            ],
+            "la_url": "string"
+        },
+        "protocols": {
+            "whitelist": false,
+            "hls": true,
+            "dash": true,
+            "player": true,
+            "mss": true,
+            "rtmp": true,
+            "rtsp": true,
+            "m4f": true,
+            "m4s": true,
+            "mseld": true,
+            "tshttp": true,
+            "webrtc": true,
+            "srt": true,
+            "shoutcast": true,
+            "mp4": true,
+            "jpeg": true,
+            "api": true
+        },
+        "prepush": false,
+        "segment_count": 4,
+        "segment_duration": 5000,
+        "chunk_duration": 200,
+        "url_prefix": false,
+        "hls_scte35": "scte35",
+        "add_audio_only": true,
+        "webrtc_abr": {
+            "start_track": "v2"
+        },
+        "pushes": [
+            {
+                "url": "string",
+                "stats": {
+                    "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+                    "opened_at": 0,
+                    "bytes": 0,
+                    "status": "starting",
+                    "since": 0,
+                    "retries": 0,
+                    "last_error": "string",
+                    "sent_bytes": 0,
+                    "payload": 0,
+                    "encoded": 0,
+                    "fillers": 0,
+                    "stuffing": 0,
+                    "trimmed_bytes": 0,
+                    "trimmed_frames": 0,
+                    "sys_fillers": 0,
+                    "sys_payload": 0,
+                    "sys_stuffing": 0
+                },
+                "multicast_loop": true,
+                "vb": 2720,
+                "bitrate": 3200,
+                "pnr": 0,
+                "pmt": 8191,
+                "pids": {
+                    "pmt": 8191,
+                    "pcr": 8191,
+                    "sdt": 8191,
+                    "media": [
+                        {
+                            "pid": 8191,
+                            "content": "audio",
+                            "track": 1,
+                            "bitrate": 2543
+                        }
+                    ],
+                    "default": "auto"
+                },
+                "mpegts_ac3": "keep",
+                "dns": "string",
+                "retry_limit": 0,
+                "retry_timeout": 7,
+                "timeout": 10,
+                "volume": 0.5,
+                "deinterlace": true,
+                "fps": "string",
+                "size": "720x576",
+                "format": "ntsc",
+                "video_format": "pal",
+                "vbi_lines": [
+                    {
+                        "service": "ttxt",
+                        "lines": [
+                            6
+                        ]
+                    }
+                ],
+                "dthreads": 0,
+                "scale": "fast_bilinear",
+                "disabled": true,
+                "minversion": "1.0.0",
+                "version": "1.3.0",
+                "enforcedencryption": true,
+                "passphrase": "mytopsecret",
+                "connect_timeout": 2,
+                "linger": 60,
+                "latency": 2,
+                "streamid": "#!::r=my-stream,m=publish",
+                "standby": true
+            }
+        ],
+        "mpegts_pids": {
+            "pmt": 8191,
+            "pcr": 8191,
+            "sdt": 8191,
+            "media": [
+                {
+                    "pid": 8191,
+                    "content": "audio",
+                    "track": 1,
+                    "bitrate": 2543
+                }
+            ],
+            "default": "auto"
+        },
+        "mpegts_ac3": "keep",
+        "labels": {
+            "key1": "value1",
+            "key2": "value2"
+        },
+        "playback_headers": [
+            {
+                "playback": "live",
+                "protocols": {
+                    "whitelist": false,
+                    "hls": true,
+                    "dash": true,
+                    "player": true,
+                    "mss": true,
+                    "rtmp": true,
+                    "rtsp": true,
+                    "m4f": true,
+                    "m4s": true,
+                    "mseld": true,
+                    "tshttp": true,
+                    "webrtc": true,
+                    "srt": true,
+                    "shoutcast": true,
+                    "mp4": true,
+                    "jpeg": true,
+                    "api": true
+                },
+                "headers": {
+                    "Cache-Control": "max-age=3600"
+                },
+                "segment_headers": {
+                    "Cache-Control": "max-age=3600"
+                }
+            }
+        ],
+        "cluster_ingest": {
+            "capture_at": "string"
+        },
+        "cache": {
+            "path": "/storage/cache",
+            "reference": "cache1",
+            "misses": 3,
+            "storage_limit": 400000,
+            "expiration": 3600,
+            "disk_limit": 0,
+            "time_limit": 0
+        },
+        "meta": {
+            "property1": "string",
+            "property2": "string"
+        },
+        "vision": {
+            "gpu": 1,
+            "alg": "faces",
+            "areas": "string"
+        },
+        "srt": 9060,
+        "srt2": 9062,
+        "srt_play": {
+            "port": 9050,
+            "minversion": "1.1.0",
+            "version": "1.3.0",
+            "enforcedencryption": true,
+            "passphrase": "mytopsecret",
+            "timeout": 10,
+            "linger": 15,
+            "latency": 150
+        },
+        "srt2_play": {
+            "port": 9050,
+            "minversion": "1.1.0",
+            "version": "1.3.0",
+            "enforcedencryption": true,
+            "passphrase": "mytopsecret",
+            "timeout": 10,
+            "linger": 15,
+            "latency": 150
+        },
+        "srt_publish": {
+            "port": 9050,
+            "minversion": "1.1.0",
+            "version": "1.3.0",
+            "enforcedencryption": true,
+            "passphrase": "mytopsecret",
+            "timeout": 10,
+            "linger": 15,
+            "latency": 150
+        },
+        "srt2_publish": {
+            "port": 9050,
+            "minversion": "1.1.0",
+            "version": "1.3.0",
+            "enforcedencryption": true,
+            "passphrase": "mytopsecret",
+            "timeout": 10,
+            "linger": 15,
+            "latency": 150
+        },
+        "aac_ab": 0,
+        "output_audio": "keep",
+        "prefer_codec": "h264",
+        "transport": "udp",
+        "max_bitrate": 0,
+        "min_bitrate": 0,
+        "frames_timeout": 0,
+        "abr_stepup": 0,
+        "abr_correction": 0,
+        "abr_loss_lower": 0,
+        "abr_loss_upper": 0,
+        "abr_stepdown": 0,
+        "abr_mode": 0,
+        "abr_debug": 0,
+        "abr_cycles": 0
+    }
+}
